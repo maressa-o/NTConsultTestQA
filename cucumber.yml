@@ -1,0 +1,11 @@
+#encoding: UTF-8
+---
+    default: -p progress -p json -p test
+    
+    progress: --format progress
+    
+    pretty: --format pretty
+    html:  --format html --out=reports/report.html
+    json:  --format json --out=reports/report.json
+
+    test: ENVIRONMENT=test
