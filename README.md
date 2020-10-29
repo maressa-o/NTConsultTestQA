@@ -32,7 +32,10 @@ Após a conclusão, todos os arquivos estarão disponíveis no diretório previa
 
 O projeto foi estruturado da seguinte forma:
 
+![project-structure](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/project-structure.png)
+
  * A pasta **features** contém todos os arquivos fonte do projeto, sendo eles:
+ 
      * **contracts:** possui os arquivos .json utilizados nas requisições feitas pelos testes.
      * **hooks:** o arquivo hooks, implementa o método de inicialização da classe de serviços, que será utilizada durante todos os testes.
      * **services:** o arquivo _service_ implementa todos os métodos utilizados pelos steps que auxiliam nas ações descritas nos cenários.
@@ -64,7 +67,7 @@ bundle install
 cucumber -p -test -t @suatag
 ```
 
-![@tag]()
+![@tag](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/tags.png)
 
 Para esse projeto, temos 3 tipos de tag, que foram destacadas na imagem acima:
 
@@ -101,11 +104,11 @@ Conseguimos gerar dois tipos de relatório para esse projeto.
 
        
 
-     ![report-home]()
+     ![report-home](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/report_home.png)
 
-     ![report-features]()
+     ![report-features](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/report_features.png)
 
-     ![report-steps]()
+     ![report-steps](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/report_steps.png)
 
 * O segundo relatório se trata de uma ferramente utilizada para avaliar a qualidade do código Ruby, que exibe melhorias e código flake para um progeto feito em ruby. Para visualizar basta:
       
@@ -116,7 +119,7 @@ Conseguimos gerar dois tipos de relatório para esse projeto.
       
      * O relatório que será exibido, se parecerá com esse: 
 
-     ![rubycritic]()
+     ![rubycritic](https://github.com/maressa-o/NTConsultTestQA/blob/main/images/rubycritic.png)
 
 
 ## ------------ Dúvidas ------------ 
