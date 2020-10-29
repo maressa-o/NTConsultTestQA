@@ -28,6 +28,26 @@ git clone https://github.com/maressa-o/NTConsultTestQA
 ```
 Após a conclusão, todos os arquivos estarão disponíveis no diretório previamente escolhido.
 
+## A estrutura do projeto
+
+O projeto foi estruturado da seguinte forma:
+
+ * A pasta **features** contém todos os arquivos fonte do projeto, sendo eles:
+     * **contracts:** possui os arquivos .json utilizados nas requisições feitas pelos testes.
+     * **hooks:** o arquivo hooks, implementa o método de inicialização da classe de serviços, que será utilizada durante todos os testes.
+     * **services:** o arquivo _service_ implementa todos os métodos utilizados pelos steps que auxiliam nas ações descritas nos cenários.
+     * **specifications:** nessa pasta, temos os arquivos _.feature_ contendo os BDD`s (descrições) dos cenários de testes.
+     * **step_definitions:** nessa pasta, encontramos os arquivos _steps_ que implementam as ações do usuário para cada fluxo, seguindo seus respectivos cenários descritos nos arquivos _.feature_.
+     * **support:** Aqui, encontramos:
+        * **env.rb:** possui as configurações de todo o projeto
+        * **config:** nessa pasta está o arquivo _test.yml_ que contém a url base da aplicação.
+        * **utils:** esse diretório possui dois arquivos auxiliares, o _data.rb_ que contém dados auxiliares utilizados nos testes, e o arquivo _resource.rb_ que contém os resources de nossa aplicação, permitindo a execução dos verbos HTTP.
+        * **report_builder.rb:** esse arquivo possui a configuração do relatório gerado para o resultados dos testes após a execução.
+     * **reports:** nessa pasta são gerados os arquivos dos relatórios de execução dos testes.
+     * **tmp:** possui os arquivos de configuração da gem _rubycritic_
+     * **cucumber.yml:** possui as configurações de execução do projeto.
+     * **Gemfile:** onde declaramos as gems (bibliotecas) utilizadas em nosso projeto. 
+
 ## Executando...
 
 Para executar os testes, abra o projeto, baixado no passo anterior, em uma IDE de sua escolha, e siga o passo a passo:
