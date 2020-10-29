@@ -1,3 +1,3 @@
 Before do
-    $JSON_API = ServiceJSON_API.new
+    @JSON_API = ServiceJSON_API.new
 end

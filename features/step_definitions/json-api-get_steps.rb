@@ -1,6 +1,6 @@
 #@json-get-all-comments
 Quando('eu buscar por todos os comentarios existentes') do
-    @response = $JSON_API.get_data(RESOURCES[:COMMENTS])
+    @response = @JSON_API.get_data(RESOURCES[:COMMENTS])
   end
   
   Entao('meu retorno nao deve ser vazio') do
@@ -10,7 +10,7 @@ Quando('eu buscar por todos os comentarios existentes') do
 
 #@json-get-failure
 Quando('eu buscar por um comentario inexistente') do
-    @response = $JSON_API.get_data(RESOURCES[:NONEXISTENT_COMMENT])
+    @response = @JSON_API.get_data(RESOURCES[:NONEXISTENT_COMMENT])
   end
   
   Entao('meu retorno deve ser uma lista de registros vazia') do

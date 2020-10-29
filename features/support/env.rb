@@ -7,7 +7,7 @@ require 'cucumber'
 require 'faker'
 require 'report_builder'
 require 'date'
-require 'pry'
+require 'rubycritic'
 
 ENVIRONMENT = ENV['ENVIRONMENT']
 
